@@ -1,0 +1,161 @@
+{
+  "matchid": 2017907,
+  "ClipGroups": [
+    {
+      "ID": "c41746bf-1e01-4ede-8162-8aad7c50a427",
+      "Url": "http://en.static.stg.ngs.deltatre.net/feed/vr/cup=3/videos/match/match=2017907/clips/clip=c41746bf-1e01-4ede-8162-8aad7c50a427-detail.json",
+      "Title": "MDM1 Package France",
+      "Phase": "Pre-match",
+      "minute": null,
+      "category": {
+        "subjectType": "teamfrom",
+        "subjectid": "43",
+        "type": "mdm1 package"
+      },
+      "ThumbnailUrl": "http://clipassets-p.ngs.deltatre.net/1EAD12C41E58F1E56F0DBB46B2FCFA54/1EAD12C41E58F1E56F0DBB46B2FCFA54.jpg"
+    },
+    {
+      "ID": "7bde8b69-b780-4451-80ce-8e4ea9a882ac",
+      "Url": "http://en.static.stg.ngs.deltatre.net/feed/vr/cup=3/videos/match/match=2017907/clips/clip=7bde8b69-b780-4451-80ce-8e4ea9a882ac-detail.json",
+      "Title": "MDM1 Package Portugal",
+      "Phase": "Pre-match",
+      "minute": null,
+      "category": {
+        "subjectType": "teamfrom",
+        "subjectid": "110",
+        "type": "mdm1 package"
+      },
+      "ThumbnailUrl": "http://clipassets-p.ngs.deltatre.net/DD7DDF33097B80A1EA8DE6AEC63A4FFF/DD7DDF33097B80A1EA8DE6AEC63A4FFF.jpg"
+    },
+    {
+      "ID": "0ad4809a-b7bb-4af4-b0d0-8faf70a08c81",
+      "Url": "http://en.static.stg.ngs.deltatre.net/feed/vr/cup=3/videos/match/match=2017907/clips/clip=0ad4809a-b7bb-4af4-b0d0-8faf70a08c81-detail.json",
+      "Title": "MDM1 Training France",
+      "Phase": "Pre-match",
+      "minute": null,
+      "category": {
+        "subjectType": "teamfrom",
+        "subjectid": "43",
+        "type": "mdm1 training"
+      },
+      "ThumbnailUrl": "http://clipassets-p.ngs.deltatre.net/50F56A02A2B980D33CDD5CCB811FEB3B/50F56A02A2B980D33CDD5CCB811FEB3B.jpg"
+    },
+    {
+      "ID": "c21f02bc-e333-44bd-a38e-f86715d604df",
+      "Url": "http://en.static.stg.ngs.deltatre.net/feed/vr/cup=3/videos/match/match=2017907/clips/clip=c21f02bc-e333-44bd-a38e-f86715d604df-detail.json",
+      "Title": "MDM1 Press Conference Portugal",
+      "Phase": "Pre-match",
+      "minute": null,
+      "category": {
+        "subjectType": "teamfrom",
+        "subjectid": "110",
+        "type": "mdm1 press conference"
+      },
+      "ThumbnailUrl": "http://clipassets-p.ngs.deltatre.net/C1A78FA76D829BE0B52415F2FFEC258C/C1A78FA76D829BE0B52415F2FFEC258C.jpg"
+    },
+    {
+      "ID": "f9248b65-19ec-4969-ba59-c0786a3c57d4",
+      "Url": "http://en.static.stg.ngs.deltatre.net/feed/vr/cup=3/videos/match/match=2017907/clips/clip=f9248b65-19ec-4969-ba59-c0786a3c57d4-detail.json",
+      "Title": "MDM1 Interview Pepe",
+      "Phase": "Pre-match",
+      "minute": null,
+      "category": {
+        "subjectType": "teamfrom",
+        "subjectid": "110",
+        "type": "mdm1 interview"
+      },
+      "ThumbnailUrl": "http://clipassets-p.ngs.deltatre.net/EED556FDD964A454A8C0FD3348337EB8/EED556FDD964A454A8C0FD3348337EB8.jpg"
+    },
+    {
+      "ID": "5cf251dd-7ec8-4485-8b01-4ada1622e415",
+      "Url": "http://en.static.stg.ngs.deltatre.net/feed/vr/cup=3/videos/match/match=2017907/clips/clip=5cf251dd-7ec8-4485-8b01-4ada1622e415-detail.json",
+      "Title": "MDM1 Interview Fernando Santos",
+      "Phase": "Pre-match",
+      "minute": null,
+      "category": {
+        "subjectType": "teamfrom",
+        "subjectid": "110",
+        "type": "mdm1 interview"
+      },
+      "ThumbnailUrl": "http://clipassets-p.ngs.deltatre.net/8EDB6461619610B1D9F5008E6718D22A/8EDB6461619610B1D9F5008E6718D22A.jpg"
+    },
+    {
+      "ID": "e742608e-6df4-4a83-ad4b-585e6d2210f1",
+      "Url": "http://en.static.stg.ngs.deltatre.net/feed/vr/cup=3/videos/match/match=2017907/clips/clip=e742608e-6df4-4a83-ad4b-585e6d2210f1-detail.json",
+      "Title": "MDM1 Press Conference France",
+      "Phase": "Pre-match",
+      "minute": null,
+      "category": {
+        "subjectType": "teamfrom",
+        "subjectid": "43",
+        "type": "mdm1 press conference"
+      },
+      "ThumbnailUrl": "http://clipassets-p.ngs.deltatre.net/4435FF598F9B476B516F1F78048AD941/4435FF598F9B476B516F1F78048AD941.jpg"
+    },
+    {
+      "ID": "2a92b599-088f-488f-8242-085c007bf667",
+      "Url": "http://en.static.stg.ngs.deltatre.net/feed/vr/cup=3/videos/match/match=2017907/clips/clip=2a92b599-088f-488f-8242-085c007bf667-detail.json",
+      "Title": "MDM1 Training Portugal",
+      "Phase": "Pre-match",
+      "minute": null,
+      "category": {
+        "subjectType": "teamfrom",
+        "subjectid": "110",
+        "type": "mdm1 training"
+      },
+      "ThumbnailUrl": "http://clipassets-p.ngs.deltatre.net/89ACE13CA01C1AFC6CB9CB16A4F29105/89ACE13CA01C1AFC6CB9CB16A4F29105.jpg"
+    },
+    {
+      "ID": "bcae4bcc-cc99-437e-8b59-1ca3112f8b2c",
+      "Url": "http://en.static.stg.ngs.deltatre.net/feed/vr/cup=3/videos/match/match=2017907/clips/clip=bcae4bcc-cc99-437e-8b59-1ca3112f8b2c-detail.json",
+      "Title": "MDM1 Interview Didier Deschamps",
+      "Phase": "Pre-match",
+      "minute": null,
+      "category": {
+        "subjectType": "teamfrom",
+        "subjectid": "43",
+        "type": "mdm1 interview"
+      },
+      "ThumbnailUrl": "http://clipassets-p.ngs.deltatre.net/7DF6F81DBC22E6EA31F507B3F4E39B77/7DF6F81DBC22E6EA31F507B3F4E39B77.jpg"
+    },
+    {
+      "ID": "bb43b204-555c-4bce-bb37-cc595fc03d44",
+      "Url": "http://en.static.stg.ngs.deltatre.net/feed/vr/cup=3/videos/match/match=2017907/clips/clip=bb43b204-555c-4bce-bb37-cc595fc03d44-detail.json",
+      "Title": "MDM1 Press Conference France",
+      "Phase": "Pre-match",
+      "minute": null,
+      "category": {
+        "subjectType": "teamfrom",
+        "subjectid": "43",
+        "type": "mdm1 press conference"
+      },
+      "ThumbnailUrl": "http://clipassets-p.ngs.deltatre.net/2612823B9B67B9D1447981153B453340/2612823B9B67B9D1447981153B453340.jpg"
+    },
+    {
+      "ID": "ea21b0ed-27b0-47a4-a375-5701d6c9b083",
+      "Url": "http://en.static.stg.ngs.deltatre.net/feed/vr/cup=3/videos/match/match=2017907/clips/clip=ea21b0ed-27b0-47a4-a375-5701d6c9b083-detail.json",
+      "Title": "MDM1 Interview Bacary Sagna",
+      "Phase": "Pre-match",
+      "minute": null,
+      "category": {
+        "subjectType": "teamfrom",
+        "subjectid": "43",
+        "type": "mdm1 interview"
+      },
+      "ThumbnailUrl": "http://clipassets-p.ngs.deltatre.net/6B21D39E68158127685388010A13FED6/6B21D39E68158127685388010A13FED6.jpg"
+    },
+    {
+      "ID": "f256794c-7e2e-4b38-853b-1ce2f2bd943e",
+      "Url": "http://en.static.stg.ngs.deltatre.net/feed/vr/cup=3/videos/match/match=2017907/clips/clip=f256794c-7e2e-4b38-853b-1ce2f2bd943e-detail.json",
+      "Title": "MDM1 Interview Hugo Lloris",
+      "Phase": "Pre-match",
+      "minute": null,
+      "category": {
+        "subjectType": "teamfrom",
+        "subjectid": "43",
+        "type": "mdm1 interview"
+      },
+      "ThumbnailUrl": "http://clipassets-p.ngs.deltatre.net/D7491589D9E195F7F902B72C1B7B1920/D7491589D9E195F7F902B72C1B7B1920.jpg"
+    }
+  ]
+}
