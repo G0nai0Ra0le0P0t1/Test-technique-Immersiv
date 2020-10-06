@@ -24,14 +24,16 @@ public class GridManager : MonoBehaviour
     private float tileSize = 15;
 
     [SerializeField]
-    private GameObject ImageTemplate;
-
-
-    [SerializeField]
-    private RectTransform rectTransformCanvas;
+    private GameObject ImageTemplate=null;
 
     [SerializeField]
-    private ItemLoader SceneLoader;
+    private RectTransform RectTemplate = null;
+
+    [SerializeField]
+    private RectTransform rectTransformCanvas=null;
+
+    [SerializeField]
+    private ItemLoader SceneLoader=null;
 
     int count = 0;
 
@@ -39,33 +41,25 @@ public class GridManager : MonoBehaviour
     /// <summary>
     /// In the start, we first create the Grid filled with empty images
     /// then we start a coroutine to load each image in the image sprite of the Gameobject corresponding
+    /// while resizing the images to the correct dimensions while keeping the same ratio
+    /// to avoid deforming the images
     /// </summary>
 
     void Start()
     {
         GenerateGrid();
-
-        foreach (VideoInformation videoInfo in SceneLoader.OutputScript.ClipGroups)
-        {
-            if (count<9)
-            {
-                StartCoroutine(DownloadImage(videoInfo.ThumbnailUrl, transform.GetChild(count).gameObject));
-                transform.GetChild(count).GetChild(0).GetComponent<Text>().text = videoInfo.Title;
-
-            }
-                
-            count++;
-        }
     }
 
     /// <summary>
-    /// This coroutine will download the image from the url provided and replace the sprite of the image GameObject 
+    /// This coroutine will download the image from the url provided and replace the sprite of the image 
+    /// using the GetRectTransform() method to get the rectTransform of the image and resizing it
+    /// and changing it's sprite, using the SetSprite() method,
     /// by the downloaded image (adapted into a sprite)
     /// </summary>
     /// <param name="url"></param>
     /// <param name="image"></param>
     /// <returns></returns>
-    IEnumerator DownloadImage(string url, GameObject image)
+    IEnumerator DownloadImage(string url, GetInformationFromCanvas image)
     {
         UnityWebRequest request = UnityWebRequestTexture.GetTexture(url);
         yield return request.SendWebRequest();
@@ -73,12 +67,33 @@ public class GridManager : MonoBehaviour
             Debug.Log(request.error);
         else
         {
-            image.GetComponent<Image>().sprite = Sprite.Create(
+            reziseCanvas(image.GetRectTransform(), DownloadHandlerTexture.GetContent(request).width, DownloadHandlerTexture.GetContent(request).height);
+            image.SetSprite(Sprite.Create(
                 DownloadHandlerTexture.GetContent(request), 
                 new Rect(0.0f, 0.0f, DownloadHandlerTexture.GetContent(request).width, DownloadHandlerTexture.GetContent(request).height), 
-                new Vector2(0.5f, 0.5f));
+                new Vector2(0.5f, 0.5f)));
 
         }
+    }
+
+    /// <summary>
+    /// a function that resize the canva to the correct width and height
+    /// while keeping the same ration between it's width and height
+    /// </summary>
+    /// <param name="canva"></param>
+    /// <param name="width"></param>
+    /// <param name="height"></param>
+    private void reziseCanvas(RectTransform canva, float width, float height)
+    {
+        if (width > height)
+        {
+            canva.sizeDelta = new Vector2(canva.rect.width, canva.rect.width * height / width);
+        }
+        else
+        {
+            canva.sizeDelta = new Vector2(width * canva.rect.height / height, canva.rect.height);
+        }
+
     }
 
     /// <summary>
@@ -88,17 +103,34 @@ public class GridManager : MonoBehaviour
         private void GenerateGrid()
     {
         GameObject imageSpawn = Instantiate(ImageTemplate);
-
-        for (int row = 0; row < rows; row++)
+        GetInformationFromCanvas getInfoFromCanvas = null;
+        int row = 0;
+        int column = 0;
+        foreach (VideoInformation videoInfo in SceneLoader.OutputScript.ClipGroups)
         {
-            for (int column = 0; column < columns; column++)
+            if (count < rows* columns)
             {
                 GameObject tile = Instantiate(imageSpawn, transform);
-                float posX = -rectTransformCanvas.rect.width / 2 + ImageTemplate.GetComponent<RectTransform>().rect.width / 2 + column * (ImageTemplate.GetComponent<RectTransform>().rect.width + tileSize);
-                float posY = -rectTransformCanvas.rect.height / 2 + ImageTemplate.GetComponent<RectTransform>().rect.height / 2 + row * (ImageTemplate.GetComponent<RectTransform>().rect.height + tileSize);
+                getInfoFromCanvas = tile.transform.GetComponent<GetInformationFromCanvas>();
+                float posX = -rectTransformCanvas.rect.width / 2 + RectTemplate.rect.width / 2 + column * (RectTemplate.rect.width + tileSize);
+                float posY = -rectTransformCanvas.rect.height / 2 + RectTemplate.rect.height / 2 + row * (RectTemplate.rect.height + tileSize);
                 tile.transform.localPosition = new Vector3(posX, posY, 0);
                 tile.layer = 8;
+                column++;
+                if (column == columns)
+                {
+                    column -= columns;
+                    row++;
+                }
+
+                
+                StartCoroutine(DownloadImage(videoInfo.ThumbnailUrl, getInfoFromCanvas));
+                //tile.transform.GetChild(0).GetComponent<Text>().text = videoInfo.Title;
+                getInfoFromCanvas.SetText(videoInfo.Title);
+
             }
+
+            count++;
         }
         Destroy(imageSpawn);
     }

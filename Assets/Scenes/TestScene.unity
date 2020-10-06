@@ -567,8 +567,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchoredPosition: {x: -200, y: 0}
+  m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1892841466
 MonoBehaviour:
@@ -584,8 +584,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rows: 3
   columns: 3
-  tileSize: 30
+  tileSize: 75
   ImageTemplate: {fileID: 161696543514888005, guid: 14e76c65a5ecc4a4580fcf64915a155a,
+    type: 3}
+  RectTemplate: {fileID: 8484909808514758787, guid: 14e76c65a5ecc4a4580fcf64915a155a,
     type: 3}
   rectTransformCanvas: {fileID: 1892841465}
   SceneLoader: {fileID: 65249221}
@@ -623,8 +625,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 400}
+  m_AnchoredPosition: {x: 50, y: 0}
+  m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1991552342
 MonoBehaviour:

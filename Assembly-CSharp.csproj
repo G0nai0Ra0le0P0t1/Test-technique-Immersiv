@@ -56,6 +56,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ChangeCameraSight.cs" />
+     <Compile Include="Assets\Scripts\GetInformationFromCanvas.cs" />
+     <Compile Include="Assets\Scripts\GetTextFromCanvas.cs" />
      <Compile Include="Assets\Scripts\GridManager.cs" />
      <Compile Include="Assets\Scripts\ItemLoader.cs" />
      <Compile Include="Assets\Scripts\JsonFileReader.cs" />
